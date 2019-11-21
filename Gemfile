@@ -50,7 +50,7 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
-  gem 'cucumber-rails', '~> 2.0'
+  gem 'cucumber-rails', '~> 2.0', require: false
   gem 'database_cleaner', '~> 1.7'
   gem 'shoulda-matchers', '~> 4.1', '>= 4.1.2'
   gem 'faker', '~> 2.7'
