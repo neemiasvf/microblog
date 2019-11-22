@@ -1,0 +1,11 @@
+<% title "Forgot your password?" %>
+<% page_header "Forgot your password?" %>
+
+<%= bootstrap_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <%= f.email_field :email %>
+  <%= f.submit "Send me reset password instructions" %>
+<% end %>
+
+<%= render "devise/shared/links" %>

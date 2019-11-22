@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Microblog</title>
+    <title><%= yield :title %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,16 @@
   </head>
 
   <body>
+    <% if notice %>
+      <div class="alert alert-success" role="alert"><%= notice %></div>
+    <% end %>
+    <% if alert %>
+      <div class="alert alert-danger" role="alert"><%= alert %></div>
+    <% end %>
+    <h2>
+      <%= yield :page_header %>
+      <small><%= yield :optional_description %></small>
+    </h2>
     <%= yield %>
   </body>
 </html>
