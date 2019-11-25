@@ -2,11 +2,6 @@ RSpec.describe TweetsController, type: :controller do
   it { should use_before_action(:set_tweet) }
   it { should use_before_action(:authenticate_user!) }
 
-  it do
-    params = { tweet: { content: 'test', user_id: 1 } }
-    should permit(:content, :user_id).for(:create, params: params).on(:tweet)
-  end
-
   it { should route(:get, '/tweets').to(controller: :tweets, action: :index) }
   it { should route(:post, '/tweets').to(controller: :tweets, action: :create) }
   it { should route(:get, '/tweets/new').to(controller: :tweets, action: :new) }
