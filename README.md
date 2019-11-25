@@ -1,24 +1,9 @@
-# README
+### RH Software | Teste Back End
+[![Build Status](https://travis-ci.com/neemiasvf/microblog.svg?token=qyvxAVNHoMsUCdYZLTsb&branch=master)](https://travis-ci.com/neemiasvf/microblog)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este projeto é uma implementação do [teste back-end](https://code.rhsoftware.dev/snippets/2) para a [RH Software](http://rhsoftware.com.br).
 
-Things you may want to cover:
+### Live Deploy
+O aplicativo pode ser acessado através do link: https://microblog.herokuapp.com
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+> O link fornecido acima é apenas para demonstração temporária. Se você não consegue acessá-lo, isso quer dizer que o deploy já foi desativado.
