@@ -4,6 +4,6 @@
 Este projeto é uma implementação do [teste back-end](https://code.rhsoftware.dev/snippets/2) para a [RH Software](http://rhsoftware.com.br).
 
 ### Live Deploy
-O aplicativo pode ser acessado através do link: https://microblog.herokuapp.com
+A aplicação pode ser acessada através do link: https://microblog-rhsoftware.herokuapp.com
 
 > O link fornecido acima é apenas para demonstração temporária. Se você não consegue acessá-lo, isso quer dizer que o deploy já foi desativado.
