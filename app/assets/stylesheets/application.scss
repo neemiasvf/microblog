@@ -15,3 +15,24 @@
  */
 @import "bootstrap";
 @import "rails_bootstrap_forms";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+.center {
+  margin: auto;
+  max-width: 60%;
+}
+
+.center-small {
+  margin: auto;
+  max-width: 30%;
+}
+
+.center-large {
+  margin: auto;
+  max-width: 80%;
+}
+
+#main_body {
+  margin-top: 70px;
+}

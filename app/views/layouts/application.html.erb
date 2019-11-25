@@ -10,16 +10,17 @@
   </head>
 
   <body>
-    <% if notice %>
-      <div class="alert alert-success" role="alert"><%= notice %></div>
-    <% end %>
-    <% if alert %>
-      <div class="alert alert-danger" role="alert"><%= alert %></div>
-    <% end %>
-    <h2>
-      <%= yield :page_header %>
-      <small><%= yield :optional_description %></small>
-    </h2>
-    <%= yield %>
+    <%= render 'layouts/header' %>
+    <div class="center-large">
+      <div class="container" id="main_body">
+        <%= render 'layouts/alerts' %>
+        <h2>
+          <%= yield :page_header %>
+          <small><%= yield :optional_description %></small>
+        </h2>
+        <%= yield %>
+        <%= debug(params) if Rails.env.development? %>
+      </div>
+    </div>
   </body>
 </html>

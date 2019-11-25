@@ -1,0 +1,12 @@
+<div class="card">
+  <div class="card-header">
+    <%= link_to tweet.user.full_name, user_path(tweet.user) %>
+  </div>
+  <div class="card-body">
+    <p class="card-text"><%= tweet.content %></p>
+    <%= destroy_button 'tweet', tweet.id, 'Delete this tweet' if current_user == tweet.user %>
+  </div>
+  <div class="card-footer text-muted">
+    <%= time_ago_in_words tweet.created_at %> ago
+  </div>
+</div>

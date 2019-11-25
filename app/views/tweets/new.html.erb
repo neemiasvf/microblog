@@ -1,0 +1,7 @@
+<%= bootstrap_form_for(@tweet) do |f| %>
+  <%= f.hidden_field :user_id, value: current_user.id %>
+  <%= f.text_area :content, hide_label: true,
+                  prepend: t(:'activerecord.attributes.tweet.content'),
+                  append: submit_button('Tweet', 'feather', 'info'),
+                  help: "Your tweet must contain at most 280 characters." %>
+<% end %>

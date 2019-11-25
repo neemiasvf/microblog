@@ -1,3 +1,4 @@
-<% title 'Welcome!' %>
-<% page_header 'Sign up or Login' %>
-<%= link_to 'Log out', destroy_user_session_path, method: :delete %>
+<% title 'Home' %>
+<% page_header 'Latest Tweets' %>
+
+<%= render 'tweets/index' %>
