@@ -20,3 +20,7 @@ end
 Then(/^I should see "([^"]*)"$/) do |message|
   expect(page).to have_content(message)
 end
+
+Then(/^I should be at the homepage$/) do
+  assert_current_path root_path
+end

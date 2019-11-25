@@ -18,3 +18,7 @@ end
 And(/^that tweet should still be posted$/) do
   Tweet.find(@tweet.id)
 end
+
+When(/^I try to access the index for tweets$/) do
+  visit tweets_path
+end
