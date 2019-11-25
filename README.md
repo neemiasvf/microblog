@@ -1,5 +1,6 @@
 ### RH Software | Teste Back End
 [![Build Status](https://travis-ci.com/neemiasvf/microblog.svg?token=qyvxAVNHoMsUCdYZLTsb&branch=master)](https://travis-ci.com/neemiasvf/microblog)
+[![codecov](https://codecov.io/gh/neemiasvf/microblog/branch/master/graph/badge.svg)](https://codecov.io/gh/neemiasvf/microblog)
 
 Este projeto é uma implementação do [teste back-end](https://code.rhsoftware.dev/snippets/2) para a [RH Software](http://rhsoftware.com.br).
 
